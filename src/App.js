@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Layou from './Layou.js'
+import Layou from './modules/Layou.js'
 
 function App() {
   return (
