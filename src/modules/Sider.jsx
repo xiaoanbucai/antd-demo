@@ -56,8 +56,9 @@ class Sider extends Component {
             <Menu.Item key="13">流动人口查验</Menu.Item>
           </SubMenu>
           <SubMenu key="sub5" icon={<AuditOutlined />} title="党团志愿">
-            <Menu.Item key="14">Team 1</Menu.Item>
-            <Menu.Item key="15">Team 2</Menu.Item>
+            <Menu.Item key="14">党员关系迁移</Menu.Item>
+            <Menu.Item key="15">上缴党费</Menu.Item>
+            <Menu.Item key="19">志愿服务</Menu.Item>
           </SubMenu>
           <SubMenu key="sub6" icon={<NotificationOutlined />} title="宣传服务">
             <Menu.Item key="16">Team 1</Menu.Item>
