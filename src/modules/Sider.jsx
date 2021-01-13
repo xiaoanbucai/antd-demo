@@ -24,6 +24,10 @@ class Sider extends Component {
     this.setState({ collapsed });
   };
 
+  handleClick = e => {
+    console.log('click ', e);
+    
+  };
 
   render() {
     const { Sider } = Layout;
@@ -31,7 +35,7 @@ class Sider extends Component {
     return (
       <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
         <div className="logo" />
-        <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+        <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" onClick={this.handleClick}>
           <Menu.Item key="1" icon={<HomeTwoTone />}>
             首页
               </Menu.Item>
@@ -57,14 +61,14 @@ class Sider extends Component {
           </SubMenu>
           <SubMenu key="sub5" icon={<AuditOutlined />} title="党团志愿">
             <Menu.Item key="14">党员关系迁移</Menu.Item>
-            <Menu.Item key="15">上缴党费</Menu.Item>
-            <Menu.Item key="19">志愿服务</Menu.Item>
+            <Menu.Item key="15">缴纳党费</Menu.Item>
+            <Menu.Item key="16">志愿服务</Menu.Item>
           </SubMenu>
           <SubMenu key="sub6" icon={<NotificationOutlined />} title="宣传服务">
-            <Menu.Item key="16">Team 1</Menu.Item>
-            <Menu.Item key="17">Team 2</Menu.Item>
+            <Menu.Item key="17">Team 1</Menu.Item>
+            <Menu.Item key="18">Team 2</Menu.Item>
           </SubMenu>
-          <Menu.Item key="18" icon={<QuestionCircleOutlined />}>
+          <Menu.Item key="19" icon={<QuestionCircleOutlined />}>
             问题咨询
               </Menu.Item>
         </Menu>

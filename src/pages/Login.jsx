@@ -22,14 +22,6 @@ class Login extends Component {
 
      }
 
-     onFinish = (values) => {
-          console.log('Success:', values);
-     };
-
-     onFinishFailed = (errorInfo) => {
-          console.log('Failed:', errorInfo);
-     };
-
      render() {
           return (
               
@@ -43,8 +35,6 @@ class Login extends Component {
                               initialValues={{
                                    remember: true,
                               }}
-                              onFinish={this.onFinish}
-                              onFinishFailed={this.onFinishFailed}
                          >
                               <Form.Item
                                    name="username"
